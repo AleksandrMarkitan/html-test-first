@@ -19,3 +19,23 @@ pre::selection {
 .text {
     font-family: 'Tangerine', cursive;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Селектор атрибута, который начинается с определённого символа */
+[href^="https"] {
+    color: red;
+    font-size: 32px;
+}
+/* Селектор атрибута, который заканчивается на определённый символ */
+[href$=".com"] {
+    color: red;
+    font-size: 32px;
+}
+/* Селектор атрибута, который включает определённый символ */
+[href*="+38"] {
+    color: red;
+    font-size: 32px;
+}
