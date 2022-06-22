@@ -1,0 +1,146 @@
+/* Стилизирую макет по ДР */
+
+/* Сразу разбераем и используем CSS-переменные*/
+
+:root {
+    --primary-text-color: #757575;
+    --primary-bg-color: #ffffff;
+    --title-text-color: #212121;
+    --link-hover-focus-text-color: #2196F3;
+}
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: #2196F3;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+.part-of-logo-in-header-studio-color {
+    color: black;
+}
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--link-hover-focus-text-color);
+}
+.site-nav .link.current {
+    color: var(--link-hover-focus-text-color);
+}
+
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--link-hover-focus-text-color);
+}
+
+.hero {
+    background-color: aquamarine;
+}
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+.section {
+    background-color: var(--primary-bg-color);
+}
+.section-title {
+    color: var(--title-text-color);
+}
+
+.advantages .title {
+    color: var(--title-text-color);
+}
+
+.team .title {
+    color: var(--title-text-color);
+}
+
+.footer-background {
+    background-color: #2F303A;
+}
+
+.part-of-logo-in-futer-studio-color {
+    color: white;
+}
+.address-links .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+.address-links .street {
+    color: #FFFFFF;
+}
+
+/* Дальше идут всякие эксперименты */
+
+/* Button. Вернее элемент который выглядит как кнопка*/
+.button {
+    color: var(--link-hover-focus-text-color);
+    background-color: var(--primary-bg-color);
+    font-size: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.button.primary {
+    color: var(--primary-bg-color);
+    background-color: var(--link-hover-focus-text-color);
+}
+.button.primary:hover,
+.button.primary:focus{
+    color: tomato;
+    background-color: turquoise;
+}
+.button.secondary {
+    color: var(--link-hover-focus-text-color);
+    background-color: var(--primary-bg-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: tomato;
+    background-color: turquoise;
+}
+.test-link{
+    color: black;
+}
+.test-link:hover,
+.test-link:focus{
+    color: rgb(161, 48, 48);
+    font-size: 34px;
+}
+.test-link:active{
+color: rgb(44, 194, 101);
+}
+ .social-links .link {
+    color: black;
+ }
+    .social-links .link:hover,
+    .social-links .link:focus {
+    color: rgb(255, 0, 200);
+ }
+
+
+ /* Как убрать точки из конкретного спика. Есл нужно убрать точки из вех списков, 
+ просто пишем ul */
+/* nav ul {
+    list-style: none;
+} */
+
+/* Накидаем палитру цветов по нашему макету */
+
+/* Цвет логотипа */
+
