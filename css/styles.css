@@ -1,146 +1,240 @@
-/* Стилизирую макет по ДР */
-
-/* Сразу разбераем и используем CSS-переменные*/
-
 :root {
-    --primary-text-color: #757575;
     --primary-bg-color: #ffffff;
+    --section-team-bg-color: #F5F4FA;
+    --hero-bg-color: #2F303A;
+    --primary-text-color: #757575;
     --title-text-color: #212121;
-    --link-hover-focus-text-color: #2196F3;
+    --accent-blue-color: #2196F3;
+    --accent-black-color: #000000;
+    --address-links-color: rgba(255, 255, 255, 0.6);
 }
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+address {
+    font-style: normal;
+}
+
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+}
+
+button {
+    font: inherit;
+    border: none;
+
+    cursor: pointer;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .logo {
-    color: #2196F3;
+    color: var(--accent-blue-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
-.list {
-    list-style: none;
+.logo .accent {
+    color: var(--accent-black-color);
 }
 
-.link {
-    text-decoration: none;
-
-}
-
-.part-of-logo-in-header-studio-color {
-    color: black;
-}
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
-.site-nav .link:hover, 
+
+.site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--link-hover-focus-text-color);
+    color: var(--accent-blue-color);
 }
+
 .site-nav .link.current {
-    color: var(--link-hover-focus-text-color);
+    color: var(--accent-blue-color);
 }
 
 .auth-nav .link {
     color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-    color: var(--link-hover-focus-text-color);
+    color: var(--accent-blue-color);
+}
+
+.page-footer {
+    background-color: var(--hero-bg-color);
+}
+
+.page-footer .logo .accent {
+    color: var(--primary-bg-color);
+}
+
+.address-links .link {
+    color: var(--address-links-color);
+
+    font-style: normal;
+}
+
+.link.contacts:hover,
+.link.contacts:focus {
+    color: var(--accent-blue-color);
+}
+
+.link.googlmaps {
+    color: var(--primary-bg-color);
 }
 
 .hero {
-    background-color: aquamarine;
+    background-color: var(--hero-bg-color);
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--primary-bg-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.section {
-    background-color: var(--primary-bg-color);
+.hero-button {
+    background: var(--accent-blue-color);
+    color: var(--primary-bg-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+
 }
+
 .section-title {
     color: var(--title-text-color);
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 .advantages .title {
     color: var(--title-text-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section.team {
+    background-color: var(--section-team-bg-color);
 }
 
 .team .title {
     color: var(--title-text-color);
+
+    font-weight: 500;
 }
 
-.footer-background {
-    background-color: #2F303A;
+.team .title,
+.team .position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
-.part-of-logo-in-futer-studio-color {
-    color: white;
-}
-.address-links .link {
-    color: rgba(255, 255, 255, 0.6);
-}
-.address-links .street {
-    color: #FFFFFF;
+.portfolio-nav {
+    background: var(--section-team-bg-color);
+    color: var(--title-text-color);
+    border-radius: 4px;
+
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
-/* Дальше идут всякие эксперименты */
-
-/* Button. Вернее элемент который выглядит как кнопка*/
-.button {
-    color: var(--link-hover-focus-text-color);
-    background-color: var(--primary-bg-color);
-    font-size: 24px;
-    padding: 12px 24px;
-    display: inline-block;
-    border: 2px solid black;
-}
-.button.primary {
+.portfolio-nav:hover,
+.portfolio-nav:focus {
+    background: var(--accent-blue-color);
     color: var(--primary-bg-color);
-    background-color: var(--link-hover-focus-text-color);
 }
-.button.primary:hover,
-.button.primary:focus{
-    color: tomato;
-    background-color: turquoise;
+
+.portfolio-nav.see {
+    background: var(--accent-blue-color);
+    color: var(--primary-bg-color);
 }
-.button.secondary {
-    color: var(--link-hover-focus-text-color);
-    background-color: var(--primary-bg-color);
-}
-.button.secondary:hover,
-.button.secondary:focus {
-    color: tomato;
-    background-color: turquoise;
-}
-.test-link{
-    color: black;
-}
-.test-link:hover,
-.test-link:focus{
-    color: rgb(161, 48, 48);
-    font-size: 34px;
-}
-.test-link:active{
-color: rgb(44, 194, 101);
-}
- .social-links .link {
-    color: black;
- }
-    .social-links .link:hover,
-    .social-links .link:focus {
-    color: rgb(255, 0, 200);
- }
+
+.works .title {
+    color: var(--title-text-color);
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 
 
- /* Как убрать точки из конкретного спика. Есл нужно убрать точки из вех списков, 
- просто пишем ul */
-/* nav ul {
-    list-style: none;
-} */
+}
 
-/* Накидаем палитру цветов по нашему макету */
+.works .kind-of {
+    color: var(--primary-text-color);
 
-/* Цвет логотипа */
- 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
