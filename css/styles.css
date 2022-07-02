@@ -18,12 +18,15 @@ html {
     box-sizing: inherit;
 }
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+    margin-top: 0px;
+}
+p {
+    margin-bottom: 0px;
 }
 .list {
     list-style: none;
-    padding-left: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 .link {
     text-decoration: none;
@@ -49,6 +52,12 @@ body {
 
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    outline: 2px solid tomato;
+}
 button {
     font: inherit;
     border: none;
@@ -68,6 +77,14 @@ button {
     overflow: hidden;
 }
 
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid rgb(71, 74, 255);
+}
 .logo {
     color: var(--accent-blue-color);
     font-family: 'Raleway', sans-serif;
@@ -110,6 +127,8 @@ button {
 
 .page-footer {
     background-color: var(--hero-bg-color);
+
+    padding: 60px 0px;
 }
 
 .page-footer .logo .accent {
@@ -133,6 +152,9 @@ button {
 
 .hero {
     background-color: var(--hero-bg-color);
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -144,6 +166,9 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    width: 696px;
+    margin: 0px auto 30px;
 }
 
 .hero-button {
@@ -151,7 +176,11 @@ button {
     color: var(--primary-bg-color);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
     border-radius: 4px;
+    padding: 10px 32px;
+    margin: 0px auto 0px;
+    min-width: 200px;
 
     font-weight: 700;
     font-size: 16px;
@@ -170,6 +199,8 @@ button {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 .advantages .title {
@@ -180,8 +211,14 @@ button {
     text-transform: uppercase;
 }
 
+.section.specialization {
+    padding-top: 0px;
+}
+
 .section.team {
     background-color: var(--section-team-bg-color);
+
+    margin-bottom: 0px;
 }
 
 .team .title {
@@ -200,6 +237,7 @@ button {
 .portfolio-nav {
     background: var(--section-team-bg-color);
     color: var(--title-text-color);
+    padding: 6px 22px;
     border-radius: 4px;
 
 
@@ -208,6 +246,8 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
 }
 
 .portfolio-nav:hover,
